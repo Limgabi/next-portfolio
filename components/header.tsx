@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
 import Link from "next/link";
+import DarkModeToggleButton from "./dark-mode-toggle-button";
 
 function Header() {
   return (
@@ -13,6 +14,7 @@ function Header() {
         <Link href='/'><span>홈</span></Link>
         <Link href='/projects'><span>프로젝트</span></Link>
         <Link href='https://github.com/Limgabi'><span>깃허브</span></Link>
+        <DarkModeToggleButton/>
       </div>
     </HeaderWrap>
   );
