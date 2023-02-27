@@ -1,16 +1,18 @@
 import styled from "styled-components";
 import { AiFillStar } from "react-icons/ai";
+import Link from "next/link";
 
 function Header() {
   return (
     <HeaderWrap>
       <div className="left">
         <AiFillStar size={36} color="#fbf245" />
-        <h1>임가비 포트폴리오</h1>
+        <Link href='/'><h1>임가비 포트폴리오</h1></Link>
       </div>
       <div className="right">
-        <span>홈</span>
-        <span>프로젝트</span>
+        <Link href='/'><span>홈</span></Link>
+        <Link href='/projects'><span>프로젝트</span></Link>
+        <Link href='https://github.com/Limgabi'><span>깃허브</span></Link>
       </div>
     </HeaderWrap>
   );
